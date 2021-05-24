@@ -1,13 +1,29 @@
 .jumbotron {
-  padding-top: 2rem;
+  padding-top: 6rem;
   background-color: #e2edff;
+  height: 100vh;
+  position: relative;
 }
 .jumbotron img {
   width: 200px;
 }
-#project {
+nav {
+  z-index: 10px;
+}
+.svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#projects {
   background-color: #e2edff;
 }
 section {
   padding-top: 3rem;
+}
+/* Medai Query */
+@media screen and (max-width: 576px) {
+  .btn-github {
+    width: 50%;
+  }
 }

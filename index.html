@@ -19,7 +19,7 @@
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-sm fixed-top" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">Adam Ramdan</a>
         <button
@@ -54,11 +54,14 @@
     <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center" id="welcome-section">
       <img src="img/me.png" alt="Adam Ramdan" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Adam Ramdan</h1>
       <p class="lead">Mahasiswa | UMMI</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <a href="https://github.com/ar-kun" target="_blank" class="btn btn-dark btn-github" id="profile-link"
+        >Folllow My GitHub <i class="bi bi-github"></i
+      ></a>
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
           fill-opacity="1"
@@ -102,7 +105,7 @@
     <!-- Akhir About -->
 
     <!-- Project -->
-    <section id="project">
+    <section id="projects">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
@@ -111,57 +114,67 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/pro/1.png" class="card-img-top" alt="Projects 1" />
+            <div class="card project-tile">
+              <img src="img/pro/KnY.png" class="card-img-top" alt="Projects 1" />
               <div class="card-body">
+                <h5 class="card-title">KnY Tribute Page</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eaque nihil voluptate similique provident fugit, ratione eos fuga
                   esse iusto.
                 </p>
+                <a href="https://ar-kun.github.io/KnY-Tribute-Page/" class="btn btn-primary" target="_blank">Detail Project &raquo;</a>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/pro/2.jpg" class="card-img-top" alt="Projects 2" />
+            <div class="card project-tile">
+              <img src="img/pro/Form.png" class="card-img-top" alt="Projects 2" />
               <div class="card-body">
+                <h5 class="card-title">Surver Form</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur delectus pariatur quasi aperiam hic eligendi cumque
                   ut obcaecati totam!
                 </p>
+                <a href="https://ar-kun.github.io/Survey-Form-KnY/" class="btn btn-primary" target="_blank">Detail Project &raquo;</a>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/pro/3.jpg" class="card-img-top" alt="Projects 3" />
+            <div class="card project-tile">
+              <img src="img/pro/TD.png" class="card-img-top" alt="Projects 3" />
               <div class="card-body">
+                <h5 class="card-title">Technical Documentation</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum distinctio facere labore minus doloremque odio animi voluptatum
                   magnam non exercitationem.
                 </p>
+                <a href="https://ar-kun.github.io/Technical-Documentation/" class="btn btn-primary" target="_blank">Detail Project &raquo;</a>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/pro/4.png" class="card-img-top" alt="Projects 4" />
+            <div class="card project-tile">
+              <img src="img/pro/Product.png" class="card-img-top" alt="Projects 4" />
               <div class="card-body">
+                <h5 class="card-title">Product Landing Page</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eos incidunt cumque dolore alias sint voluptas ea pariatur autem
                   sunt!
                 </p>
+                <a href="https://ar-kun.github.io/Product-Landing-Page/" class="btn btn-primary" target="_blank">Detail Project &raquo;</a>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/pro/5.jpg" class="card-img-top" alt="Projects 5" />
+            <div class="card project-tile">
+              <img src="img/pro/Portfolia.png" class="card-img-top" alt="Projects 5" />
               <div class="card-body">
+                <h5 class="card-title">--</h5>
                 <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod mollitia porro accusantium consectetur fuga ducimus saepe hic
-                  quisquam, laboriosam velit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eos incidunt cumque dolore alias sint voluptas ea pariatur autem
+                  sunt!
                 </p>
+                <a href="https://ar-kun.github.io/" class="btn btn-primary" target="_blank">Detail Project &raquo;</a>
               </div>
             </div>
           </div>
@@ -272,5 +285,6 @@
           .catch((error) => console.error('Error!', error.message));
       });
     </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
